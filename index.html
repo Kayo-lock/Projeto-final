@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Consumo de Mídia Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pesquisa: Consumo de Mídia Digital - Análise de Hábitos e Preferências</h1>
+
+  <form id="mediaForm">
+    <fieldset>
+      <legend>I. Hábito e Frequência de Acesso</legend>
+
+      <p>1. Em média, qual dispositivo você mais utiliza para acessar a internet e consumir conteúdo digital (redes sociais, notícias, vídeos, etc.)?</p>
+      <label><input type="radio" name="dispositivo" value="Smartphone"> Smartphone (Celular)</label><br>
+      <label><input type="radio" name="dispositivo" value="Computador"> Computador (Desktop ou Notebook)</label><br>
+      <label><input type="radio" name="dispositivo" value="Tablet"> Tablet</label><br>
+      <label><input type="radio" name="dispositivo" value="Smart TV ou Console"> Smart TV ou Console de Videogame</label><br>
+      <label><input type="radio" name="dispositivo" value="Outro"> Outro</label><br>
+
+      <p>2. Quantas horas por dia, aproximadamente, você passa consumindo mídia digital (sem contar o uso para trabalho ou estudo obrigatório)?</p>
+      <label><input type="radio" name="horas_consumo" value="<1"> Menos de 1 hora</label><br>
+      <label><input type="radio" name="horas_consumo" value="1-3"> De 1 a 3 horas</label><br>
+      <label><input type="radio" name="horas_consumo" value="3-5"> De 3 a 5 horas</label><br>
+      <label><input type="radio" name="horas_consumo" value=">5"> Mais de 5 horas</label><br>
+      <label><input type="radio" name="horas_consumo" value="nao_sei"> Não sei / Não tenho esse hábito</label><br>
+
+      <p>3. Qual é a sua frequência de acesso a Redes Sociais (Instagram, TikTok, Facebook, X/Twitter, etc.)?</p>
+      <label><input type="radio" name="frequencia_rs" value="várias_vezes_hora"> Várias vezes por hora</label><br>
+      <label><input type="radio" name="frequencia_rs" value="várias_vezes_dia"> Várias vezes por dia</label><br>
+      <label><input type="radio" name="frequencia_rs" value="uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
+      <label><input type="radio" name="frequencia_rs" value="poucas_semana"> Poucas vezes por semana</label><br>
+      <label><input type="radio" name="frequencia_rs" value="quase_nunca"> Quase nunca / Não uso</label><br>
+
+      <p>4. Você sente que o consumo de mídia digital interfere no seu rendimento acadêmico ou em horas de sono?</p>
+      <label><input type="radio" name="interferencia" value="nunca"> Nunca</label><br>
+      <label><input type="radio" name="interferencia" value="raramente"> Raramente</label><br>
+      <label><input type="radio" name="interferencia" value="às_vezes"> Às vezes</label><br>
+      <label><input type="radio" name="interferencia" value="frequentemente"> Frequentemente</label><br>
+      <label><input type="radio" name="interferencia" value="sempre"> Sempre</label><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>II. Preferência de Plataforma e Formato</legend>
+
+      <p>5. Qual plataforma digital é a sua principal fonte de informação e notícias (não entretenimento)?</p>
+      <label><input type="radio" name="plataforma_noticias" value="sites_notícias"> Sites de Jornais/Notícias (G1, UOL, Folha, etc.)</label><br>
+      <label><input type="radio" name="plataforma_noticias" value="redes_sociais"> Redes Sociais (Instagram, X/Twitter, Facebook, etc.)</label><br>
+      <label><input type="radio" name="plataforma_noticias" value="aplicativos_mensagem"> Aplicativos de Mensagem (WhatsApp, Telegram)</label><br>
+      <label><input type="radio" name="plataforma_noticias" value="plataformas_video"> Plataformas de Vídeo (YouTube)</label><br>
+      <label><input type="radio" name="plataforma_noticias" value="nao_consumo"> Não consumo notícias digitais</label><br>
+
+      <p>6. No consumo de vídeo, qual formato você prefere ou passa mais tempo assistindo?</p>
+      <label><input type="radio" name="formato_video" value="vídeos_longos"> Vídeos longos (acima de 10 minutos, como documentários e vlogs detalhados)</label><br>
+      <label><input type="radio" name="formato_video" value="vídeos_média"> Vídeos de média duração (3 a 10 minutos, como tutoriais e análises)</label><br>
+      <label><input type="radio" name="formato_video" value="vídeos_curto"> Vídeos curtos/Verticais (menos de 1 minuto, como TikTok, Reels, Shorts)</label><br>
+      <label><input type="radio" name="formato_video" value="lives"> Transmissões ao vivo (Lives)</label><br>
+      <label><input type="radio" name="formato_video" value="não_consume"> Não consumo vídeos digitais frequentemente</label><br>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>III. Comportamento e Crenças</legend>
+
+      <p>7. O que mais influencia sua decisão de assinar ou continuar pagando por um Serviço de Streaming de Vídeo (Netflix, Globoplay, HBO Max, etc.)?</p>
+      <label><input type="radio" name="influencia_streaming" value="preço"> Preço da mensalidade</label><br>
+      <label><input type="radio" name="influencia_streaming" value="conteúdo_exclusivo"> Conteúdo exclusivo (Originais)</label><br>
+      <label><input type="radio" name="influencia_streaming" value="qualidade_imagem_som"> Qualidade da imagem e som</label><br>
+      <label><input type="radio" name="influencia_streaming" value="recomendações"> Recomendações de amigos/familiares</label><br>
+      <label><input type="radio" name="influencia_streaming" value="download_offline"> Possibilidade de baixar o conteúdo para assistir offline</label><br>
+
+      <p>8. Você costuma realizar 'Multitarefa Midiática', ou seja, usar outro dispositivo (como o celular) enquanto assiste a TV ou Streaming?</p>
+      <label><input type="radio" name="multitarefa" value="sempre_quase_sempre"> Sempre ou quase sempre</label><br>
+      <label><input type="radio" name="multitarefa" value="frequentemente"> Frequentemente (na maioria das vezes)</label><br>
+      <label><input type="radio" name="multitarefa" value="às_vezes"> Às vezes</label><br>
+      <label><input type="radio" name="multitarefa" value="raramente"> Raramente ou nunca</label><br>
+
+      <p>9. Com que frequência você se depara com informações ou notícias que parecem falsas ou enganosas (Fake News) nas redes sociais?</p>
+      <label><input type="radio" name="freq_fake_news" value="várias_vezes_dia"> Várias vezes ao dia</label><br>
+      <label><input type="radio" name="freq_fake_news" value="pelo_menos_uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
+      <label><input type="radio" name="freq_fake_news" value="algumas_vezes_semana"> Algumas vezes por semana</label><br>
+      <label><input type="radio" name="freq_fake_news" value="raramente"> Raramente ou nunca</label><br>
+
+      <p>10. Qual é a sua principal motivação ao consumir a maior parte da mídia digital?</p>
+      <label><input type="radio" name="motivacao" value="entretenimento"> Entretenimento e diversão</label><br>
+      <label><input type="radio" name="motivacao" value="informação_aprendizado"> Informação e aprendizado</label><br>
+      <label><input type="radio" name="motivacao" value="conexao_social"> Comunicação e conexão social</label><br>
+      <label><input type="radio" name="motivacao" value="passar_tempo"> Passar o tempo/distração</label><br>
+      <label><input type="radio" name="motivacao" value="trabalho_estudo"> Trabalho ou estudo</label><br>
+
+    </fieldset>
+
+    <button type="button" id="enviaBtn">Enviar</button>
+  </form>
+
+  <script>
+    const enviaBtn = document.getElementById('enviaBtn');
+
+    enviaBtn.addEventListener('click', () => {
+      const form = document.getElementById('mediaForm');
+      const formData = new FormData(form);
+      const dataObj = {};
+      formData.forEach((value, key) => {
+        dataObj[key] = value;
+      });
+
+      console.log('Dados do formulário:', dataObj);
+
+      fetch('/api/upload', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataObj)
+      })
+      .then(response => response.json())
+      .then(result => {
+        console.log('Resposta do servidor:', result);
+        alert('Formulário enviado com sucesso!');
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Erro no envio:', error);
+        alert('Ocorreu um erro ao enviar o formulário.');
+      });
+    });
+  </script>
+</body>
+</html>
+
