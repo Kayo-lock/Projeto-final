@@ -2,131 +2,139 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Formulário de Consumo de Mídia Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa de Consumo de Mídia Digital</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Pesquisa: Consumo de Mídia Digital - Análise de Hábitos e Preferências</h1>
+  <div class="container">
+    <h1>Pesquisa: Consumo de Mídia Digital - Análise de Hábitos e Preferências</h1>
 
-  <form id="mediaForm">
-    <fieldset>
-      <legend>I. Hábito e Frequência de Acesso</legend>
+    <form id="mediaForm" method="post">
+      <fieldset>
+        <legend>Informações Demográficas</legend>
 
-      <p>1. Em média, qual dispositivo você mais utiliza para acessar a internet e consumir conteúdo digital (redes sociais, notícias, vídeos, etc.)?</p>
-      <label><input type="radio" name="dispositivo" value="Smartphone"> Smartphone (Celular)</label><br>
-      <label><input type="radio" name="dispositivo" value="Computador"> Computador (Desktop ou Notebook)</label><br>
-      <label><input type="radio" name="dispositivo" value="Tablet"> Tablet</label><br>
-      <label><input type="radio" name="dispositivo" value="Smart TV ou Console"> Smart TV ou Console de Videogame</label><br>
-      <label><input type="radio" name="dispositivo" value="Outro"> Outro</label><br>
+        <p>1 Qual seu gênero?</p>
+        <label><input type="radio" name="genero" value="Masculino"> Masculino</label><br>
+        <label><input type="radio" name="genero" value="Feminino"> Feminino</label><br>
+        <label><input type="radio" name="genero" value="Não-binário"> Não-binário</label><br>
+        <label><input type="radio" name="genero" value="Prefiro não responder"> Prefiro não responder</label><br>
 
-      <p>2. Quantas horas por dia, aproximadamente, você passa consumindo mídia digital (sem contar o uso para trabalho ou estudo obrigatório)?</p>
-      <label><input type="radio" name="horas_consumo" value="<1"> Menos de 1 hora</label><br>
-      <label><input type="radio" name="horas_consumo" value="1-3"> De 1 a 3 horas</label><br>
-      <label><input type="radio" name="horas_consumo" value="3-5"> De 3 a 5 horas</label><br>
-      <label><input type="radio" name="horas_consumo" value=">5"> Mais de 5 horas</label><br>
-      <label><input type="radio" name="horas_consumo" value="nao_sei"> Não sei / Não tenho esse hábito</label><br>
+        <p>2 Qual a sua faixa etária?</p>
+        <label><input type="radio" name="idade_faixa" value="Menos de 18 anos"> Menos de 18 anos</label><br>
+        <label><input type="radio" name="idade_faixa" value="18-20 anos"> 18-20 anos</label><br>
+        <label><input type="radio" name="idade_faixa" value="21-23 anos"> 21-23 anos</label><br>
+        <label><input type="radio" name="idade_faixa" value="24-26 anos"> 24-26 anos</label><br>
+        <label><input type="radio" name="idade_faixa" value="27 anos ou mais"> 27 anos ou mais</label><br>
 
-      <p>3. Qual é a sua frequência de acesso a Redes Sociais (Instagram, TikTok, Facebook, X/Twitter, etc.)?</p>
-      <label><input type="radio" name="frequencia_rs" value="várias_vezes_hora"> Várias vezes por hora</label><br>
-      <label><input type="radio" name="frequencia_rs" value="várias_vezes_dia"> Várias vezes por dia</label><br>
-      <label><input type="radio" name="frequencia_rs" value="uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
-      <label><input type="radio" name="frequencia_rs" value="poucas_semana"> Poucas vezes por semana</label><br>
-      <label><input type="radio" name="frequencia_rs" value="quase_nunca"> Quase nunca / Não uso</label><br>
+        <p>3 Além do curso técnico, qual seu status atual:</p>
+        <label><input type="radio" name="situacao" value="Estudante, não trabalha"> Estudante (não trabalha)</label><br>
+        <label><input type="radio" name="situacao" value="Estudante e trabalha"> Estudante e com trabalho</label><br>
+        <label><input type="radio" name="situacao" value="Trabalha, não estuda"> Trabalho (não estudo)</label><br>
+        <label><input type="radio" name="situacao" value="Não estuda nem trabalha"> Não estudo nem trabalho</label><br>
 
-      <p>4. Você sente que o consumo de mídia digital interfere no seu rendimento acadêmico ou em horas de sono?</p>
-      <label><input type="radio" name="interferencia" value="nunca"> Nunca</label><br>
-      <label><input type="radio" name="interferencia" value="raramente"> Raramente</label><br>
-      <label><input type="radio" name="interferencia" value="às_vezes"> Às vezes</label><br>
-      <label><input type="radio" name="interferencia" value="frequentemente"> Frequentemente</label><br>
-      <label><input type="radio" name="interferencia" value="sempre"> Sempre</label><br>
+        <p>4 Qual seu nível de ensino mais alto concluído ou em andamento?</p>
+        <label><input type="radio" name="ensino" value="Ensino fundamental"> Ensino Fundamental</label><br>
+        <label><input type="radio" name="ensino" value="Ensino médio"> Ensino Médio</label><br>
+        <label><input type="radio" name="ensino" value="Ensino técnico ou tecnólogo"> Ensino Técnico ou Tecnólogo</label><br>
+        <label><input type="radio" name="ensino" value="Ensino superior (bacharelado/licenciatura)"> Ensino Superior (Bacharelado/Licenciatura)</label><br>
+        <label><input type="radio" name="ensino" value="Pós-graduação/Mestrado/Doutorado"> Pós-graduação / Mestrado / Doutorado</label><br>
 
-    </fieldset>
+      </fieldset>
+      <fieldset>
+        <legend>I. Hábito e Frequência de Acesso</legend>
 
-    <fieldset>
-      <legend>II. Preferência de Plataforma e Formato</legend>
+        <p>1. Em média, qual dispositivo você mais utiliza para acessar a internet e consumir conteúdo digital (redes sociais, notícias, vídeos, etc.)?</p>
+        <label><input type="radio" name="dispositivo" value="Smartphone"> Smartphone (Celular)</label><br>
+        <label><input type="radio" name="dispositivo" value="Computador"> Computador (Desktop ou Notebook)</label><br>
+        <label><input type="radio" name="dispositivo" value="Tablet"> Tablet</label><br>
+        <label><input type="radio" name="dispositivo" value="Smart TV ou Console"> Smart TV ou Console de Videogame</label><br>
+        <label><input type="radio" name="dispositivo" value="Outro"> Outro</label><br>
 
-      <p>5. Qual plataforma digital é a sua principal fonte de informação e notícias (não entretenimento)?</p>
-      <label><input type="radio" name="plataforma_noticias" value="sites_notícias"> Sites de Jornais/Notícias (G1, UOL, Folha, etc.)</label><br>
-      <label><input type="radio" name="plataforma_noticias" value="redes_sociais"> Redes Sociais (Instagram, X/Twitter, Facebook, etc.)</label><br>
-      <label><input type="radio" name="plataforma_noticias" value="aplicativos_mensagem"> Aplicativos de Mensagem (WhatsApp, Telegram)</label><br>
-      <label><input type="radio" name="plataforma_noticias" value="plataformas_video"> Plataformas de Vídeo (YouTube)</label><br>
-      <label><input type="radio" name="plataforma_noticias" value="nao_consumo"> Não consumo notícias digitais</label><br>
+        <p>2. Quantas horas por dia, aproximadamente, você passa consumindo mídia digital (sem contar o uso para trabalho ou estudo obrigatório)?</p>
+        <label><input type="radio" name="horas_consumo" value="<1"> Menos de 1 hora</label><br>
+        <label><input type="radio" name="horas_consumo" value="1-3"> De 1 a 3 horas</label><br>
+        <label><input type="radio" name="horas_consumo" value="3-5"> De 3 a 5 horas</label><br>
+        <label><input type="radio" name="horas_consumo" value=">5"> Mais de 5 horas</label><br>
+        <label><input type="radio" name="horas_consumo" value="nao_sei"> Não sei / Não tenho esse hábito</label><br>
 
-      <p>6. No consumo de vídeo, qual formato você prefere ou passa mais tempo assistindo?</p>
-      <label><input type="radio" name="formato_video" value="vídeos_longos"> Vídeos longos (acima de 10 minutos, como documentários e vlogs detalhados)</label><br>
-      <label><input type="radio" name="formato_video" value="vídeos_média"> Vídeos de média duração (3 a 10 minutos, como tutoriais e análises)</label><br>
-      <label><input type="radio" name="formato_video" value="vídeos_curto"> Vídeos curtos/Verticais (menos de 1 minuto, como TikTok, Reels, Shorts)</label><br>
-      <label><input type="radio" name="formato_video" value="lives"> Transmissões ao vivo (Lives)</label><br>
-      <label><input type="radio" name="formato_video" value="não_consume"> Não consumo vídeos digitais frequentemente</label><br>
+        <p>3. Qual é a sua frequência de acesso a Redes Sociais (Instagram, TikTok, Facebook, X/Twitter, etc.)?</p>
+        <label><input type="radio" name="frequencia_rs" value="várias_vezes_hora"> Várias vezes por hora</label><br>
+        <label><input type="radio" name="frequencia_rs" value="várias_vezes_dia"> Várias vezes por dia</label><br>
+        <label><input type="radio" name="frequencia_rs" value="uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
+        <label><input type="radio" name="frequencia_rs" value="poucas_semana"> Poucas vezes por semana</label><br>
+        <label><input type="radio" name="frequencia_rs" value="quase_nunca"> Quase nunca / Não uso</label><br>
 
-    </fieldset>
+        <p>4. Qual rede social você utiliza com maior frequência?</p>
+        <label><input type="radio" name="frequencia_rs" value="instagram"> Instagram</label><br>
+        <label><input type="radio" name="frequencia_rs" value="tiktok"> Tiktok</label><br>
+        <label><input type="radio" name="frequencia_rs" value="whatsapp"> Whatsapp</label><br>
+        <label><input type="radio" name="frequencia_rs" value="twitter"> Twitter</label><br>
+        <label><input type="radio" name="frequencia_rs" value="nao_uso_redes_sociais"> Não uso redes sociais</label><br>
 
-    <fieldset>
-      <legend>III. Comportamento e Crenças</legend>
+        <p>5. Você sente que o consumo de mídia digital interfere no seu rendimento acadêmico ou em horas de sono?</p>
+        <label><input type="radio" name="interferencia" value="nunca"> Nunca</label><br>
+        <label><input type="radio" name="interferencia" value="raramente"> Raramente</label><br>
+        <label><input type="radio" name="interferencia" value="às_vezes"> Às vezes</label><br>
+        <label><input type="radio" name="interferencia" value="frequentemente"> Frequentemente</label><br>
+        <label><input type="radio" name="interferencia" value="sempre"> Sempre</label><br>
 
-      <p>7. O que mais influencia sua decisão de assinar ou continuar pagando por um Serviço de Streaming de Vídeo (Netflix, Globoplay, HBO Max, etc.)?</p>
-      <label><input type="radio" name="influencia_streaming" value="preço"> Preço da mensalidade</label><br>
-      <label><input type="radio" name="influencia_streaming" value="conteúdo_exclusivo"> Conteúdo exclusivo (Originais)</label><br>
-      <label><input type="radio" name="influencia_streaming" value="qualidade_imagem_som"> Qualidade da imagem e som</label><br>
-      <label><input type="radio" name="influencia_streaming" value="recomendações"> Recomendações de amigos/familiares</label><br>
-      <label><input type="radio" name="influencia_streaming" value="download_offline"> Possibilidade de baixar o conteúdo para assistir offline</label><br>
+      </fieldset>
 
-      <p>8. Você costuma realizar 'Multitarefa Midiática', ou seja, usar outro dispositivo (como o celular) enquanto assiste a TV ou Streaming?</p>
-      <label><input type="radio" name="multitarefa" value="sempre_quase_sempre"> Sempre ou quase sempre</label><br>
-      <label><input type="radio" name="multitarefa" value="frequentemente"> Frequentemente (na maioria das vezes)</label><br>
-      <label><input type="radio" name="multitarefa" value="às_vezes"> Às vezes</label><br>
-      <label><input type="radio" name="multitarefa" value="raramente"> Raramente ou nunca</label><br>
+      <fieldset>
+        <legend>II. Preferência de Plataforma e Formato</legend>
 
-      <p>9. Com que frequência você se depara com informações ou notícias que parecem falsas ou enganosas (Fake News) nas redes sociais?</p>
-      <label><input type="radio" name="freq_fake_news" value="várias_vezes_dia"> Várias vezes ao dia</label><br>
-      <label><input type="radio" name="freq_fake_news" value="pelo_menos_uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
-      <label><input type="radio" name="freq_fake_news" value="algumas_vezes_semana"> Algumas vezes por semana</label><br>
-      <label><input type="radio" name="freq_fake_news" value="raramente"> Raramente ou nunca</label><br>
+        <p>6. Qual plataforma digital é a sua principal fonte de informação e notícias (não entretenimento)?</p>
+        <label><input type="radio" name="plataforma_noticias" value="sites_notícias"> Sites de Jornais/Notícias (G1, UOL, Folha, etc.)</label><br>
+        <label><input type="radio" name="plataforma_noticias" value="redes_sociais"> Redes Sociais (Instagram, X/Twitter, Facebook, etc.)</label><br>
+        <label><input type="radio" name="plataforma_noticias" value="aplicativos_mensagem"> Aplicativos de Mensagem (WhatsApp, Telegram)</label><br>
+        <label><input type="radio" name="plataforma_noticias" value="plataformas_video"> Plataformas de Vídeo (YouTube)</label><br>
+        <label><input type="radio" name="plataforma_noticias" value="nao_consumo"> Não consumo notícias digitais</label><br>
 
-      <p>10. Qual é a sua principal motivação ao consumir a maior parte da mídia digital?</p>
-      <label><input type="radio" name="motivacao" value="entretenimento"> Entretenimento e diversão</label><br>
-      <label><input type="radio" name="motivacao" value="informação_aprendizado"> Informação e aprendizado</label><br>
-      <label><input type="radio" name="motivacao" value="conexao_social"> Comunicação e conexão social</label><br>
-      <label><input type="radio" name="motivacao" value="passar_tempo"> Passar o tempo/distração</label><br>
-      <label><input type="radio" name="motivacao" value="trabalho_estudo"> Trabalho ou estudo</label><br>
+        <p>7. No consumo de vídeo, qual formato você prefere ou passa mais tempo assistindo?</p>
+        <label><input type="radio" name="formato_video" value="vídeos_longos"> Vídeos longos (acima de 10 minutos, como documentários e vlogs detalhados)</label><br>
+        <label><input type="radio" name="formato_video" value="vídeos_média"> Vídeos de média duração (3 a 10 minutos, como tutoriais e análises)</label><br>
+        <label><input type="radio" name="formato_video" value="vídeos_curto"> Vídeos curtos/Verticais (menos de 1 minuto, como TikTok, Reels, Shorts)</label><br>
+        <label><input type="radio" name="formato_video" value="lives"> Transmissões ao vivo (Lives)</label><br>
+        <label><input type="radio" name="formato_video" value="nao_consume_videos"> Não consumo vídeos digitais frequentemente</label><br>
 
-    </fieldset>
+      </fieldset>
 
-    <button type="button" id="enviaBtn">Enviar</button>
-  </form>
+      <fieldset>
+        <legend>III. Comportamento e Crenças</legend>
 
-  <script>
-    const enviaBtn = document.getElementById('enviaBtn');
+        <p>8. O que mais influencia sua decisão de assinar ou continuar pagando por um Serviço de Streaming de Vídeo (Netflix, Globoplay, HBO Max, etc.)?</p>
+        <label><input type="radio" name="influencia_streaming" value="preço"> Preço da mensalidade</label><br>
+        <label><input type="radio" name="influencia_streaming" value="conteúdo_exclusivo"> Conteúdo exclusivo (Originais)</label><br>
+        <label><input type="radio" name="influencia_streaming" value="qualidade_imagem_som"> Qualidade da imagem e som</label><br>
+        <label><input type="radio" name="influencia_streaming" value="recomendações"> Recomendações de amigos/familiares</label><br>
+        <label><input type="radio" name="influencia_streaming" value="download_offline"> Possibilidade de baixar o conteúdo para assistir offline</label><br>
 
-    enviaBtn.addEventListener('click', () => {
-      const form = document.getElementById('mediaForm');
-      const formData = new FormData(form);
-      const dataObj = {};
-      formData.forEach((value, key) => {
-        dataObj[key] = value;
-      });
+        <p>9. Você costuma realizar 'Multitarefa Midiática', ou seja, usar outro dispositivo (como o celular) enquanto assiste a TV ou Streaming?</p>
+        <label><input type="radio" name="multitarefa" value="sempre_quase_sempre"> Sempre ou quase sempre</label><br>
+        <label><input type="radio" name="multitarefa" value="frequentemente"> Frequentemente (na maioria das vezes)</label><br>
+        <label><input type="radio" name="multitarefa" value="às_vezes"> Às vezes</label><br>
+        <label><input type="radio" name="multitarefa" value="raramente"> Raramente ou nunca</label><br>
 
-      console.log('Dados do formulário:', dataObj);
+        <p>10. Com que frequência você se depara com informações ou notícias que parecem falsas ou enganosas (Fake News) nas redes sociais?</p>
+        <label><input type="radio" name="freq_fake_news" value="várias_vezes_dia"> Várias vezes ao dia</label><br>
+        <label><input type="radio" name="freq_fake_news" value="pelo_menos_uma_vez_dia"> Pelo menos uma vez ao dia</label><br>
+        <label><input type="radio" name="freq_fake_news" value="algumas_vezes_semana"> Algumas vezes por semana</label><br>
+        <label><input type="radio" name="freq_fake_news" value="raramente"> Raramente ou nunca</label><br>
 
-      fetch('/api/upload', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(dataObj)
-      })
-      .then(response => response.json())
-      .then(result => {
-        console.log('Resposta do servidor:', result);
-        alert('Formulário enviado com sucesso!');
-        form.reset();
-      })
-      .catch(error => {
-        console.error('Erro no envio:', error);
-        alert('Ocorreu um erro ao enviar o formulário.');
-      });
-    });
-  </script>
+        <p>11. Qual é a sua principal motivação ao consumir a maior parte da mídia digital?</p>
+        <label><input type="radio" name="motivacao" value="entretenimento"> Entretenimento e diversão</label><br>
+        <label><input type="radio" name="motivacao" value="informação_aprendizado"> Informação e aprendizado</label><br>
+        <label><input type="radio" name="motivacao" value="conexao_social"> Comunicação e conexão social</label><br>
+        <label><input type="radio" name="motivacao" value="passar_tempo"> Passar o tempo/distração</label><br>
+        <label><input type="radio" name="motivacao" value="trabalho_estudo"> Trabalho ou estudo</label><br>
+
+      </fieldset>
+
+      <button type="submit" id="enviaBtn">Enviar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
