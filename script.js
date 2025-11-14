@@ -58,10 +58,13 @@ form.addEventListener('submit', async (e) => {
         influencia_streaming: form.influencia_streaming.value,
         multitarefa_midiatica: form.multitarefa.value,
         frequencia_fake_news: form.freq_fake_news.value,
-        motivacao_consumo: form.motivacao.value
+        motivacao_consumo: form.motivacao.value,
+        email: form.email.value,
+        rede_social :form.frequencia_redes.value
     
     };
     
+    console.log(dados);
     try {
         const resposta = await fetch('http://localhost:3333/api/uploadResponses', { 
         method: 'POST',
